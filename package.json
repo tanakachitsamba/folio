@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "next": "^7.0.1",
@@ -12,7 +13,6 @@
     "react-dom": "^16.5.2",
     "react-loadable": "^5.5.0",
     "styled-components": "^3.4.9", 
-    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"
